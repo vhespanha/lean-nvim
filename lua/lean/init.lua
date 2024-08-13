@@ -2,9 +2,9 @@ local M = {}
 
 function M.setup(opts)
   opts = opts or {}
-  require("lean.colors")
 
-  require("lean.highlights").setup(opts)
+  local colors = require("lean.colors") -- Load colors first
+  require("lean.highlights").setup(opts) -- Then set up highlights
 
   vim.cmd("colorscheme lean")
 end

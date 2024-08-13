@@ -1,6 +1,6 @@
 local colorbuddy = require("colorbuddy")
 local Group = colorbuddy.Group
-local colors = colorbuddy.colors
+local colors = require("lean.colors")
 
 -- Terminal colors
 Group.new("terminal_color_0", colors.gray[9])

@@ -1,6 +1,6 @@
 local colorbuddy = require("colorbuddy")
 local Group = colorbuddy.Group
-local colors = colorbuddy.colors
+local colors = require("lean.colors")
 local styles = colorbuddy.styles
 
 local M = {}

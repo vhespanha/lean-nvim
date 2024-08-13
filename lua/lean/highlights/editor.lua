@@ -1,6 +1,6 @@
 local colorbuddy = require("colorbuddy")
 local Group = colorbuddy.Group
-local colors = colorbuddy.colors
+local colors = require("lean.colors")
 local styles = colorbuddy.styles
 
 -- Editor highlights
@@ -11,7 +11,7 @@ Group.new("lCursor", colors.bg.default, colors.fg.muted)
 Group.new("CursorIM", colors.bg.default, colors.fg.muted)
 Group.new("CursorColumn", colors.none, colors.bg.subtle)
 Group.new("CursorLine", colors.none, colors.bg.subtle)
-Group.new("Directory", colors.syntax.func)
+Group.new("Directory", colors.syntax.entity)
 Group.new("DiffAdd", colors.none, colors.git.add)
 Group.new("DiffChange", colors.none, colors.git.changed)
 Group.new("DiffDelete", colors.none, colors.git.removed)
